@@ -1,6 +1,6 @@
 <?php
     require_once "../Controller/db_connect.php";
-    //var_dump($_POST);
+    var_dump($_POST);
 
     class dao{
         

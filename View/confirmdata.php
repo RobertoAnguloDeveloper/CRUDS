@@ -33,11 +33,21 @@
                     </table>
                     <h6><b>DESEA CREAR EL USUARIO CON ESTOS DATOS?</b></h6>
                     <div style="margin-left: 40px">
-                        <button type="submit" class="btn btn-warning">SI</button>
-                        <button type="submit" class="btn btn-warning" formaction="../index.php">NO</button>
+                        <button type="submit" class="btn btn-warning"><b>ACEPTAR</b></button>
                     </div>
                 </form>
             </div>
     </fieldset>
 </body>
 </html>
+
+<script>
+    function enviar(){
+        <?
+            require_once "../Model/dao.php";
+            
+        ?>
+        
+    }
+   
+</script>
