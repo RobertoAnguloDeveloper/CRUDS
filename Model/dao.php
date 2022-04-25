@@ -1,12 +1,10 @@
 <?php
     require_once "../Controller/db_connect.php";
-    $user = $_POST['user'];
-    
+    //var_dump($_POST);
+
     class dao{
         
         public function crearUsuario(){
-            
-
             //Query using PDO Bind Parameters
             // $sql = "INSERT INTO usuarios (nombres, apellidos, email, password) VALUES (:nombres, :apellidos, :email, :password)";
             // $stmt = $this->conn->prepare($sql);

@@ -15,7 +15,7 @@
     <h1>
         <center> CRUD 1</center>
     </h1>
-    <form action="./View/user_data.php" method="post">
+    <form action="./View/confirmdata.php" method="post">
         Nombres: <input type="text" name="nombres" id="nom">
         Apellidos: <input type="text" name="apellidos" id="ape">
         Email: <input type="email" name="email" id="email">
