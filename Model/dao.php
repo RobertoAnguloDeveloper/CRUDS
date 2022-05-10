@@ -1,19 +1,26 @@
 <?php
     require_once "../Controller/db_connect.php";
-    var_dump($_POST);
 
     class dao{
-        
+
         public function crearUsuario(){
-            //Query using PDO Bind Parameters
-            // $sql = "INSERT INTO usuarios (nombres, apellidos, email, password) VALUES (:nombres, :apellidos, :email, :password)";
-            // $stmt = $this->conn->prepare($sql);
-            // $stmt->bindParam(':nombres', $nombres);
-            // $stmt->bindParam(':apellidos', $apellidos);
-            // $stmt->bindParam(':email', $email);
-            // $stmt->bindParam(':password', $password);
-            // $stmt->execute();
-            // return $stmt;
+            $conn = new Connection();
+            $conn = $conn->connect();
+
+            $nombres = $_POST['nombres'];
+            $apellidos = $_POST['apellidos'];
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+
+            $sql = "INSERT INTO usuarios (email, password, nombres, apellidos) VALUES (:email, :password, :nombres, :apellidos)";
+            $stmt = $conn->prepare($sql);
+            
+            $stmt->bindParam(':nombres', $nombres);
+            $stmt->bindParam(':apellidos', $apellidos);
+            $stmt->bindParam(':email', $email);
+            $stmt->bindParam(':password', $password);
+            $stmt->execute();
+            return $stmt;
         }
     }
 ?>

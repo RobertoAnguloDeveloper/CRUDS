@@ -14,7 +14,7 @@
     <fieldset>
         <legend>Datos de usuario</legend>
             <div class="container mt-3">
-                <form action="../Model/dao.php" style="margin-left: 40px" method="post">
+                <form action="../View/creado.php" style="margin-left: 40px" method="post">
                     <table class="table table-hover">
                         <thead>
                             <tr>
@@ -40,14 +40,3 @@
     </fieldset>
 </body>
 </html>
-
-<script>
-    function enviar(){
-        <?
-            require_once "../Model/dao.php";
-            
-        ?>
-        
-    }
-   
-</script>
